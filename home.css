@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Zen+Maru+Gothic:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+body {
+    min-height: 100vh;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(45deg,#164a41,#4d774e,#9dc88d);
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+}
+
+@keyframes color {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo img{
+    width: 120px;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 40px;
+
+}
+
+.navbar  a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #f1b24a;
+    transition: .3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+.navbar a:hover {
+    color: #ffffff;
+}
+.home {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100vh; 
+    justify-content: space-between;
+    padding: 70px 10%;
+    align-items: center;
+    text-align: left;
+}
+
+.home-content {
+    max-width: 600px;
+    color: white;
+}
+
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+}
+
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.home-content p {
+    font-size: 20px;
+}
+
+.portrait {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portrait img{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    border: 10px solid #4d774e;
+}
