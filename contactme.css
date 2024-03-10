@@ -236,6 +236,7 @@ textarea.input{
 
 .btn{
     position: relative;
+    margin-top: 40px;
     top: 100px;
     background: #164a41;
     outline: none;

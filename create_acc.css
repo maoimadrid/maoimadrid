@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Zen+Maru+Gothic:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    position:absolute;
+    top:0;
+    right: 50px;
+}
+
+header a, .form button{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 4px;
+    color: #fff;
+    border: solid 1px #fff;
+    padding: 8px 16px;
+    margin-top: 8px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(45deg,#164a41,#4d774e,#9dc88d);
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+}
+
+@keyframes color {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+.container{
+    max-width: 600px;
+    margin:0 auto;
+    padding:50px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    color: #164a41;
+    background: aliceblue;
+    border-radius: 30px;
+    margin-top: 40px;
+}
+.form-group{
+    margin-bottom:30px;
+}
+/* Input button padding */
+.mb-3 {
+    --input-btn-padding-y: .375rem;
+    --input-btn-padding-x: .75rem;
+    --input-btn-padding-y-sm: .25rem;
+    --input-btn-padding-x-sm: .5rem;
+    --input-btn-padding-y-lg: .5rem;
+    --input-btn-padding-x-lg: 1rem;
+  }
+  
+  /* Input button font */
+  .mb-3 {
+    --input-btn-font-size: 1rem;
+    --input-btn-font-size-sm: .875rem;
+    --input-btn-font-size-lg: 1.25rem;
+  }
+  
+  /* Input button focus */
+  .mb-3 {
+    --input-btn-focus-width: 2px;
+    --input-btn-focus-color-opacity: .25;
+    --input-btn-focus-color: rgba(0, 123, 255, 0.5);
+    --input-btn-focus-blur: 0;
+    --input-btn-focus-box-shadow: 0 0 0 var(--input-btn-focus-width) var(--input-btn-focus-color);
+  }
+  
+  /* Input button border width */
+  .mb-3 {
+    --input-btn-border-width: 1px;
+  }
+  .mb-3:text-center {
+    background: #164a41;
+  }
+
+  #forms {
+    margin-top: 5%;
+    max-height: 500px;
+    max-width: 700px;
+    background-color: #d9d9d9;
+    border-radius: 15px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  textarea {
+    background-color: #d9d9d9 !important;
+    max-width: 700px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .register {
+    max-height: 500px;
+    overflow-y: auto;
+    position: relative;
+    display: none;
+  }
+  
+  .login {
+    max-height: 500px;
+    height: 500px;
+    position: relative;
+    display: flex;
+  }
+  
+  .btn {
+    background: #f1b24a !important;
+    color: #fff !important;
+    font-size: 15px;
+    font-weight: 600;
+    width: 100%;
+    max-width: 200px !important;
+    max-height: 40px;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+  }
+  
+  .account {
+    margin-top: 10px;
+  }
+  
+  .signin {
+    margin-top: 100px;
+  }
+  
+  .message {
+    margin-top: 130px;
+  }
+  
+  .move {
+    color: #f1b24a;
+  }
+  
+  .move:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .form span {
+    margin-left: 4px;
+    color: #f64668;
+}

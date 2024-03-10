@@ -40,6 +40,10 @@ body {
     z-index: 100;
 }
 
+.header.hide{
+    display:none;
+}
+
 .logo img{
     width: 120px;
     margin-right: 10px;
